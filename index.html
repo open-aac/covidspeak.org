@@ -1,0 +1,124 @@
+---
+layout: landing
+---
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>{{ site.title }}</h2>
+							<p>{{ site.description | markdownify }}</p>
+							<ul class="actions">
+								<li><a style='display: none;' href="#" class="button special inline_video" data-video-id="ELNKXfvTDbA">
+								  <span class='button_icon icon fa-play-circle-o'></span>
+								  What is CoughDrop?
+								</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- One -->
+				<section id="one" class="wrapper style1 special">
+					<header class="major">
+						<h2>About Co-VidSpeak</h2>
+						<div class='content dual'>
+							<div class='right'>
+								<div style='margin: 10px; border: 1px solid #888; position: relative; min-height: 100px;'>
+									<iframe style='width: 100%;' width="560" height="315" src="https://www.youtube.com/embed/xKEIuP0qTk4?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class='left' style='padding: 0 50px;'>
+								<p>
+										Co-VidSpeak is a free open source, web-based video conferencing 
+										tool built for people who can't speak but still need to
+										emotionally connection with those at a distance.
+								</p>
+								<p>When someone is intubated, on a ventilator, or otherwise
+									non-verbal -- especially when unwell -- they can greatly benefit
+									from positive emotional connections with others. However,
+									when quarantine or social distancing are in effect, 
+									physical proximity is not an option.
+								</p>
+								<p>
+									We built Co-VidSpeak as a free tool to help people
+									in these sittuations because we've seen it ourselves. 
+									We have family member and friends
+									who have been intubated, and can't imagine them 
+									having to be isolated from loved ones while 
+									enduring a major recovery.
+								</p>
+								<ul class="actions vertical" style='width: 400px; margin: 0 auto;'>
+									<li><a href="#" class="button fit">Try the Demo</a></li>
+									<li><a href="http://atmakers.org/" class="button fit special">Donate through ATMakers</a></li>
+								</ul>
+							</div>
+							<div style='clear: both;'></div>
+						</div>
+					</header>
+				</section>
+
+				<!-- Two -->
+				<section id="two" class="wrapper style2 special">
+					<div class="inner">
+						<header class="major">
+							<h2>How to Sign Up</h2>
+							<section class="spotlight with_video" style='text-align: left; background: transparent;'>
+								<div class='image'>
+									<img src="images/logo.svg" style="width: 100%; max-height: 300px; border: 1px solid rgba(255, 255, 255, 0.25); padding: 10px;" />
+								</div>
+								<div class='content'>
+									<p>Co-VidSpeak is currently available on a limited trial basis. We are working with hospitals and medical groups to implement Co-VidSpeak in medical settings to support individuals during the Covid-19 pandemic. You can see how it works using our <a href="#">app demo</a>.</p>
+									<p>If you are part of a group that could benefit from Co-VidSpeak, please reach out to us with details about your situation and how you think Co-VidSpeak could help.</p>
+									<p>We are offering this as a free service because we want to help. If you like what we are doing and want to help, you can <a href="http://atmakers.org/" target='_blank'>donate through ATMakers</a> to help fund our server and bandwidth costs. If you have software development of speech therapy experience and want to get involved, <a href="https://www.openaac.org" target='_blank'>join us at openaac.org</a>.</p>
+								</div>
+							</section>
+						</header>
+						<ul class="icons major" style='margin-top: -40px; margin-bottom: 50px;'>
+							<li><span class="icon fa-cloud major style1"><span class="label">Mobile</span></span></li>
+							<li><span class="icon fa-heartbeat major style2"><span class="label">Eye Gaze</span></span></li>
+							<li><span class="icon fa-tablet major style3"><span class="label">Touch</span></span></li>
+							<li><span class="icon fa-eye major style2"><span class="label">Switch Access</span></span></li>
+							<li><span class="icon fa-hand-o-up major style1"><span class="label">Reports</span></span></li>
+						</ul>
+					</div>
+				</section>					
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Wondering Who We Are?</h2>
+								<p>Learn more about <a href="https://www.coughdrop.com" target="_blank">CoughDrop</a> and <a href="http://atmakers.org" target="_blank">ATMakers</a></p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="contact.html" class="button fit special">Contact Us</a></li>
+								<li><a href="faq.html" class="button fit">See the FAQ</a></li>
+							</ul>
+						</div>
+					</section>
+
+        <div id="video_player" style='display: none; position: fixed; top: 5vh; left: 5vw; width: 90vw; height: 90vh; background: rgba(255, 255, 255, 0.8); border-radius: 5px; z-index: 99999;'>
+          <iframe frameborder='0' id='video_frame' style='background: #fff; width: calc(90vw - 20px); height: calc(90vh - 20px - 85px); margin: 10px;'></iframe>
+          <div style='margin: -5px 10px 5px;'>
+            <a href="#" class='button special big' id='close_video_player' style='vertical-align: middle;'>Close</a>
+            <span id='video_player_times' style='display: none; color: #444; font-size: 20px; margin-left: 20px; background: #fff; box-shadow: rgb(255, 255, 255) 0px 0px 30px 15px; border-radius: 5px; padding: 5px;'>
+              <span id='video_player_time'></span> / 
+              <span id='video_player_duration'></span>
+            </span>
+          </div>
+        </div>
+        
+<script>
+  (function() {
+    var loady = function() {
+      var videos = document.getElementsByTagName('video');
+      for(var idx = 0; idx < videos.length; idx++) {
+        var vid = videos[idx];
+        if(vid.getAttribute('rel') && !vid.getAttribute('src')) {
+          vid.setAttribute('src', vid.getAttribute('rel'));
+        }
+      }
+    };
+    window.addEventListener('load', loady);
+    setTimeout(loady, 10000);
+  })();
+</script>
