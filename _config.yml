@@ -12,7 +12,7 @@ email: info@covidspeak.org
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.covidspeak.org" # the base hostname & protocol for your site
 social:
-  github: https://github.com/openaac/covidspeak
+  github: https://github.com/open-aac/covidspeak
   # facebook-official: https://www.facebook.com/AACintheCloud/
   #email: /contact/
   #flickr:
