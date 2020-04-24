@@ -23,7 +23,8 @@ layout: landing
 						<div class='content dual'>
 							<div class='right'>
 								<div style='margin: 10px; border: 1px solid #888; position: relative; min-height: 100px;'>
-									<iframe style='width: 100%;' width="560" height="315" src="https://www.youtube-nocookie.com/embed/xKEIuP0qTk4?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<video id='covidspeak_preview' rel="http://d34mlja0s1hd92.cloudfront.net/covidspeak/Co-VidSpeak-demo.mp4" muted="true" autoplay="true" loop="true" style="width: 100%; border: 1px solid rgba(255, 255, 255, 0.25); margin: 10px; max-width: 600px;" src="http://d34mlja0s1hd92.cloudfront.net/covidspeak/Co-VidSpeak-demo.mp4"></video>
+									<button style='margin-bottom: 10px;' id='toggle_mute'>Toggle Mute</button>
 								</div>
 							</div>
 							<div class='left' style='padding: 0 50px;'>
@@ -123,6 +124,19 @@ layout: landing
         }
       }
     };
+		document.querySelector('#toggle_mute').addEventListener('click', function(e) {
+			e.preventDefault();
+			var video = document.querySelector('#covidspeak_preview');
+			if(video.muted) {
+				video.muted = false;
+				if(!video.restarted) {
+					video.restarted = true;
+					video.currentTime = 0;
+				}
+			} else {
+				video.muted = true;
+			}
+		})
     window.addEventListener('load', loady);
     setTimeout(loady, 10000);
   })();

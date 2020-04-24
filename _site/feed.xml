@@ -5,8 +5,8 @@
     <description>Video-Supported Remote Communication&lt;br/&gt; powered by CoughDrop and LessonPix</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Apr 2020 09:33:50 -0600</pubDate>
-    <lastBuildDate>Fri, 24 Apr 2020 09:33:50 -0600</lastBuildDate>
+    <pubDate>Fri, 24 Apr 2020 13:21:53 -0600</pubDate>
+    <lastBuildDate>Fri, 24 Apr 2020 13:21:53 -0600</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
   </channel>
