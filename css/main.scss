@@ -1990,3 +1990,8 @@ $baseurl: '{{ site.baseurl }}/images';
 			padding: 0;
 		}
 	}
+
+	.actions.vertical {
+		max-width: 400px;
+		margin: 0 auto;
+	}

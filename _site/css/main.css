@@ -850,3 +850,4 @@ body.is-mobile .backpic { background-attachment: scroll; }
 @media (min-width: 950px) { .spotlight.with_video { display: block; }
   .spotlight.with_video .image { float: right; margin-left: 15px; margin-bottom: 10px; width: 550px; }
   .spotlight.with_video .content { display: inline; padding: 0; } }
+.actions.vertical { max-width: 400px; margin: 0 auto; }
