@@ -1281,7 +1281,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.style3 {
-			@include wrapper(accent5);
+			background-image: linear-gradient(_palette(bg2), _palette(bg-dark2));
 		}
 
 		&.style4 {
