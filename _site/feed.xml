@@ -5,8 +5,8 @@
     <description>Video-Supported Remote Communication</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Aug 2020 15:34:10 -0600</pubDate>
-    <lastBuildDate>Mon, 10 Aug 2020 15:34:10 -0600</lastBuildDate>
+    <pubDate>Tue, 11 Aug 2020 12:19:22 -0600</pubDate>
+    <lastBuildDate>Tue, 11 Aug 2020 12:19:22 -0600</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
   </channel>

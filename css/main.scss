@@ -1990,6 +1990,16 @@ $baseurl: '{{ site.baseurl }}/images';
 			padding: 0;
 		}
 	}
+	@media (max-width: 500px) {
+		header h1 {
+			img {
+				margin-left: -15px;
+			}
+			#text_h1 {
+				display: none;
+			}
+		}
+	}
 
 	.actions.vertical {
 		max-width: 400px;
