@@ -3,9 +3,7 @@
 
 # Site settings
 title: Co-VidSpeak
-description:
-  Video-Supported Remote Communication<br/>
-  <i>Months w/ under 30 minutes are free</i>
+description: Video-Supported Remote Communication
 owner: CoughDrop, Inc. # or company name
 first_published: 2020 # if migrating another site, the year of your first publish
 email: info@covidspeak.org

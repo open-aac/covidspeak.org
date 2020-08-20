@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Co-VidSpeak</title>
-    <description>Video-Supported Remote Communication&lt;br/&gt; &lt;i&gt;Months w/ under 30 minutes are free&lt;/i&gt;</description>
+    <description>Video-Supported Remote Communication</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Aug 2020 13:26:39 -0600</pubDate>
-    <lastBuildDate>Wed, 19 Aug 2020 13:26:39 -0600</lastBuildDate>
+    <pubDate>Thu, 20 Aug 2020 12:15:49 -0600</pubDate>
+    <lastBuildDate>Thu, 20 Aug 2020 12:15:49 -0600</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
   </channel>
